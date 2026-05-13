@@ -82,4 +82,21 @@ greet.addEventListener("click",()=>{
 const escribir = document.createElement("input")
 escribir.id = "textInput"
 lista.append(escribir)
+escribir.addEventListener("input",()=>{
+    di.textContent = escribir.value
+})
 
+
+const di = document.createElement("div")
+di.id = "result"
+lista.append(di)
+// 10. Crea un boton con id="backgroundBtn" y, al hacer clic, cambia el color de fondo del <body> a un color diferente
+
+const bu = document.createElement("button")
+bu.id = "backgroundBtn"
+bu.textContent = "presiona"
+bu.addEventListener("click", ()=>{
+    document.body.style.backgroundColor = "black"
+     document.body.style.backgroundColor = "blue"
+})
+lista.append(bu)
