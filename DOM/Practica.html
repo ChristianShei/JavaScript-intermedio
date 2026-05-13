@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Este es mi nueva practica de HTML</title>
+</head>
+<body>
+
+    <h1> Bienvenido</h1>
+    <input type="text id="nombre" placeholder="Escribi tu mensaje" >
+
+    <button onclick="saludar()">saludar</button>
+    <p id="resultado">Resultado</p>
+    
+<script>
+    function saludar() {
+            let nombre = document.getElementById("nombre").value;
+
+            document.getElementById("resultado").innerText = "Hola " + nombre + " 👋";
+        }
+   
+</script>
+</body>
+</html>
